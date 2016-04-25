@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TheMovieApp</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="rating">Rating</string>
+
+    <string name="release_date">Released</string>
+    <string name="details">Details</string>
+    <string name="trailers">Trailers</string>
+    <string name="reviews">Reviews</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_share">Share</string>
+
+    <string name="tmdb_api_key">8313a5d971169412903a38a6c3bc7eb6</string>
+
+    <string name="removed_from_favorites">Removed from Favorites</string>
+    <string name="added_to_favorites">Added to Favorites</string>
+
+</resources>
