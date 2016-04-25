@@ -13,7 +13,7 @@
     <string name="action_favorite">Favorite</string>
     <string name="action_share">Share</string>
 
-    <string name="tmdb_api_key">8313a5d971169412903a38a6c3bc7eb6</string>
+    <string name="tmdb_api_key">your key here</string>
 
     <string name="removed_from_favorites">Removed from Favorites</string>
     <string name="added_to_favorites">Added to Favorites</string>
