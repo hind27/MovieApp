@@ -30,8 +30,8 @@ import java.util.ArrayList;
 
 public class MainFragment extends Fragment {
 
-    private static String urlPopularFilms = "http://api.themoviedb.org/3/movie/popular?api_key=";
-    private static String urlTopRatedFilms = "https://api.themoviedb.org/3/movie/top_rated?api_key=8";
+    private static String urlPopularFilms = "http://api.themoviedb.org/3/movie/popular?api_key=" + getString(R.string.tmdb_api_key);
+    private static String urlTopRatedFilms = "https://api.themoviedb.org/3/movie/top_rated?api_key" + getString(R.string.tmdb_api_key);
 
 
     //http://api.themoviedb.org/3/movie/209112/videos?api_key=
