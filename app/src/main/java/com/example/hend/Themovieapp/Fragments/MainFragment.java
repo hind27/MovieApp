@@ -33,7 +33,6 @@ public class MainFragment extends Fragment {
     private  String urlPopularFilms ;
     private  String urlTopRatedFilms ;
 
-    //http://api.themoviedb.org/3/movie/209112/videos?api_key=
     public int current_view=1;
 
     GridView gv ;
@@ -128,21 +127,37 @@ public class MainFragment extends Fragment {
         return view;
     }
 
-    @Override
+@Override
     public void onResume()
     {
         super.onResume();
-
+ 
+        updateFragment();
+ 
+ 
+    }
+ 
+    public void updateFragment()
+    {
+ 
         if(current_view==3)
         {
             dbManager =  new DBManager(getActivity().getApplicationContext());
             My_favorite_Movies =  dbManager.getAllFav();
-
+ 
             gridViewAdapter = new GridViewAdapter(getActivity(),My_favorite_Movies);
-            gv.setAdapter(gridViewAdapter);
-
+ 
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    gv.setAdapter(gridViewAdapter);
+                }
+            });
+ 
         }
     }
+    
+    
 
     public void parseJsonUpdateUI(String result)
     {
