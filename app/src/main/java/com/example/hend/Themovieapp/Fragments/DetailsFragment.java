@@ -19,6 +19,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.hend.Themovieapp.Activities.MainActivity;
 import com.example.hend.Themovieapp.Adapters.ReviewAdapter;
 import com.example.hend.Themovieapp.Adapters.TrailerAdapter;
 import com.example.hend.Themovieapp.Models.Film;
