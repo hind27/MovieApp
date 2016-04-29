@@ -144,7 +144,13 @@ public class DetailsFragment extends Fragment {
 
                                         dbManager =  new DBManager(getActivity().getApplicationContext());
                                           dbManager.fav_films_delete(film.getId());
-
+                                    
+                                    if (MainActivity.isTablet)
+                                        {
+                                            MainFragment mainFragment = (MainFragment)getActivity().getSupportFragmentManager().findFragmentByTag(getString(R.string.mainfragmenttag));
+                                            mainFragment.updateFragment();
+                                        }
+                                        
                                         return null;
 
                                     }
@@ -172,7 +178,12 @@ public class DetailsFragment extends Fragment {
                                         ,film.getOverview(),film.getVote_average()
                                         ,film.getRelease_date());
 
-
+                                      if (MainActivity.isTablet)
+                                        {
+                                            MainFragment mainFragment = (MainFragment)getActivity().getSupportFragmentManager().findFragmentByTag(getString(R.string.mainfragmenttag));
+                                            mainFragment.updateFragment();
+                                        }
+                                        
                                         return null ;
                                     }
 
