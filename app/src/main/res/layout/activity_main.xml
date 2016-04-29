@@ -3,4 +3,6 @@
     android:id="@+id/fragment_movies"
     android:name="com.example.hend.Themovieapp.Fragments.MainFragment"
      android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    android:tag="@string/mainfragmenttag"
+    />
