@@ -30,9 +30,8 @@ import java.util.ArrayList;
 
 public class MainFragment extends Fragment {
 
-    private static String urlPopularFilms = "http://api.themoviedb.org/3/movie/popular?api_key=" + getString(R.string.tmdb_api_key);
-    private static String urlTopRatedFilms = "https://api.themoviedb.org/3/movie/top_rated?api_key" + getString(R.string.tmdb_api_key);
-
+    private  String urlPopularFilms ;
+    private  String urlTopRatedFilms ;
 
     //http://api.themoviedb.org/3/movie/209112/videos?api_key=
     public int current_view=1;
@@ -67,6 +66,9 @@ public class MainFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.fragment_main, container, false);
+
+        urlPopularFilms = "http://api.themoviedb.org/3/movie/popular?api_key="+getString(R.string.tmdb_api_key);
+        urlTopRatedFilms = "https://api.themoviedb.org/3/movie/top_rated?api_key="+getString(R.string.tmdb_api_key);
 
         current_view=1;
         most_popular_films = new ArrayList<Film>();
